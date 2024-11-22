@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
+from typing import List
 HYPEN_E_DOT = "-e ."
-def get_requirements(file_path):
+def get_requirements(file_path:str)->List[str]:
     '''This to list the all the library needed'''
     requirements = []
     with open(file_path) as file:
